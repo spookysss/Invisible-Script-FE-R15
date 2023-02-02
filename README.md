@@ -50,7 +50,7 @@ local function InvisFunctionR15() -- invis function
 		end
 	end
 	
-	local function remove_acessory()
+	local function remove_acessory_sc()
 		for i, v in pairs(game.Players.LocalPlayer.Character:GetChildren()) do -- destroy accesories
 			if v:IsA("Accessory") then
 				v:Destroy()
@@ -67,9 +67,11 @@ local function InvisFunctionR15() -- invis function
 	end
 	
 	if remove_accessory then
-		remove_accessory()
+		remove_acessory_sc()
 	end
 end
+
+wait(10)
 
 InvisFunctionR15()
 ```
